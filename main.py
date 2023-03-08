@@ -27,6 +27,7 @@ def hello_world():
 
 @app.route('/hello/<name>')
 def hello_name(name):
+   logging.info('This is an name value %s', name)
    return 'Hello %s!' % name
 
 
